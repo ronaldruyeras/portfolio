@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI';
+    background:  #282627;
+    /* overflow: hidden; */
+}
+
+/* fixed navigation */
+
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #282627;
+    position: fixed;
+    z-index: 10;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    color: #8d8273;
+    /* transition: 0.5s; */
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a#togglebtn {
+    display: none;
+}
+
+nav a#togglebtn:hover {
+    color: #fff;
+}
+
+.container {
+    color: #fff;
+    /* width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth; */
+}
+
+.content {
+    height: 100vh;
+    position: relative;
+    padding: 10px 10px;
+
+}
+
+#home { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.home-content{ 
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.home-content h2 { 
+    padding: 10px;
+}
+
+.home-content img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* max-width: 150px; */
+}
+
+.home-content p {
+    padding: 4px;
+    text-align: center;
+}
+
+
+#about1 { 
+    padding: 4rem 0;
+    margin: 40px auto;
+}
+
+#about ul li {
+    list-style: none;
+}
+
+#about ul li div{
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+}
+
+#about ul li div span{
+    padding-left: 23px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* *****resume****** */
+
+.resume {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.resume h3 {
+    margin-bottom: 50px;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+.timeline li {
+    margin: 20px 20px 40px 10px;
+}
+
+.timeline h4{
+    color: #282627;
+    background-color: #f3f3f3;
+    padding: 5px 0 5px 20px;
+    font-size: 15px;
+}
+
+
+/* *****resume****** */
+
+
+#skills{ 
+    padding: 4rem 0;
+    margin: 10px 20px;
+    height: 100%;
+    /* background: #d8d5d5; */
+    /* color: #282627; */
+}
+
+
+.skillBox {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+.skillBox p{
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.skill {
+    background: #262626;
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+}
+
+.skill_level {
+    background: #0fffb7;
+    width: 100%;
+    height: 10px;
+}
+
+
+#contact{ 
+    /* padding-top: 4rem; */
+    margin: 20px 20px;
+}
+
+#contact form { 
+    padding: 1rem 0;
+    
+
+}
+
+#contact form .form-group{ 
+    width: 100%;
+    background:  #282627;
+    color: #fff;
+    overflow: hidden;
+    padding: 5px;
+}
+
+#contact form .form-group .form-control{ 
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    background: #282627;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+
+.open {
+    display: block;
+}
+
+@media screen and (max-width: 580px) {
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #282627;
+        color: #8d8273;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+
+    nav a#togglebtn::after {
+        content: "|||";
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#togglebtn {
+        display: block;
+        background: #282627;
+        color: #8d8273;
+        width: 100%;
+        position: relative;
+    }
+
+    .menu::before, .menu::after {
+        content: "";
+        display: table;
+    }
+
+    .menu::after {
+        clear: both;
+    }
+
+    .menu {
+        zoom: 1;
+    }
+
+    /* style for progress bars */
+    #skills{ 
+        padding: 4rem 0;
+        margin: 1px 2px;
+    }
+
+    #skills ul li {
+        list-style: none;
+        padding: 7px;
+    }
+
+    /* styles for about-info */
+   .about-info {
+       padding-top: 2rem;
+   }
+
+   #contact {
+       margin: 10px 0;
+   }
+
+   #contact form{ 
+    padding: 1rem 0;
+    margin: 1px 2px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
