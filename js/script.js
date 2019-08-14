@@ -19,13 +19,13 @@ navbarlinks.forEach(elem => elem.addEventListener("click", function(e){
 }));
 
 const mySkills = [
-    {skill:'html',level:'80%'},
-    {skill:'css',level:'70%'},
-    {skill:'javascript',level:'78%'},
-    {skill:'mysql',level:'79%'},
-    {skill:'node',level:'60%'},
-    {skill:'python',level:'10%'},
-    {skill:'java',level:'80%'},
+    {skill:'HTML',level:'70%'},
+    {skill:'CSS',level:'60%'},
+    {skill:'JAVASCRIPT',level:'75%'},
+    {skill:'MYSQL',level:'75%'},
+    {skill:'NODEJS',level:'50%'},
+    {skill:'PHP/CODEIGNITER',level:'40%'},
+    {skill:'JAVA',level:'60%'},
 ];
 
 const skill_div = mySkills.map(function(s){
